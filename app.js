@@ -29,7 +29,10 @@ const Port = process.env.PORT || 5000;
 
 const databaseConnect = process.env.MONGO_CONNECT;
 
-Mongoose.connect(databaseConnect, {})
+Mongoose.connect(databaseConnect, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
   .then(() => {
     console.log("Mongodb successfully connected");
   })
