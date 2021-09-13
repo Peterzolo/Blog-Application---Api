@@ -14,7 +14,7 @@ const postSchema = mongoose.Schema({
   author: {
     type: String,
   },
-  selectedFile: {
+  image: {
     type: String,
   },
   tags: {
@@ -31,6 +31,5 @@ const postSchema = mongoose.Schema({
 });
 
 const Post = mongoose.model("post", postSchema);
-
 
 module.exports = Post;
