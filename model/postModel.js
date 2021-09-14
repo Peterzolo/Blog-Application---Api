@@ -24,9 +24,9 @@ const postSchema = mongoose.Schema({
     type: Number,
     default: 0,
   },
-  createdArt: {
+  sendTime: {
     type: Date,
-    deffault: new Date(),
+    default: new Date(),
   },
 });
 
